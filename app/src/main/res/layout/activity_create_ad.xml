@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/ad_types" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:onClick="showDatePickerDialog" />
+
+    <fragment
+        android:id="@+id/autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGetCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Current Location"
+        android:onClick="getCurrentLocation" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>

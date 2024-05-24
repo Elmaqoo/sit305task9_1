@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LostFoundApp</string>
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve" >AIzaSyCsaNaiz91qjbqMs9rhFsuZJXCwteeN4O8</string>
+</resources>
